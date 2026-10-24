@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | منصة د. نور محمد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Cairo', sans-serif; background-color: #fcfbf9; color: #2d2d2d; }</style>
+</head>
+<body class="bg-[#fcfbf9] min-h-screen flex flex-col">
+
+    <header class="bg-white/85 sticky top-0 z-50 border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">مدير المنصة</span>
+                <span class="font-black text-sm text-stone-800">د. نور محمد</span>
+            </div>
+            <a href="index.html" class="text-xs font-semibold text-stone-500 hover:text-stone-900">الذهاب للواجهة الرئيسية <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-8 w-full space-y-6">
+        <h1 class="text-2xl font-black text-stone-900">لوحة التحكم والمتابعة العامة</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-xs text-stone-500 font-semibold">إجمالي الحجوزات النشطة</div>
+                <div class="text-2xl font-black text-stone-900 mt-2">48 طلب</div>
+                <div class="text-[10px] text-green-600 font-bold mt-1">معدل التحويل مرتفع 92%</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-xs text-stone-500 font-semibold">مبيعات المنتجات الرقمية</div>
+                <div class="text-2xl font-black text-amber-700 mt-2">18,400 ج.م</div>
+                <div class="text-[10px] text-stone-400 font-bold mt-1">هذا الشهر</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-xs text-stone-500 font-semibold">حالة الربط والتشغيل</div>
+                <div class="text-2xl font-black text-green-600 mt-2">Active ✓</div>
+                <div class="text-[10px] text-stone-400 font-bold mt-1">متصل بالواتساب والإنستجرام</div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+            <h3 class="font-bold text-stone-900">إدارة الروابط وتحديث المحتوى</h3>
+            <p class="text-stone-500 text-xs">يمكنك تحديث الأسعار، إضافة أدلة جديدة بصيغة PDF، أو تعديل مواعيد الحجز المتاحة مباشرة.</p>
+            <div class="flex gap-3">
+                <button onclick="alert('تم تحديث إعدادات المنصة بنجاح!')" class="bg-stone-900 text-white font-bold px-5 py-2.5 rounded-xl text-xs">حفظ التغييرات</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+        <p>جميع الحقوق محفوظة © 2026 - منصة د. نور محمد</p>
+    </footer>
+
+</body>
+</html>
