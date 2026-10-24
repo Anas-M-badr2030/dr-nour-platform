@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز جلسة استشارية | د. نور محمد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Cairo', sans-serif; background-color: #fcfbf9; color: #2d2d2d; }</style>
+</head>
+<body class="bg-[#fcfbf9] min-h-screen flex flex-col">
+
+    <header class="bg-white/85 sticky top-0 z-50 border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="font-black text-lg text-stone-800">Dr. Nour Mohamed</a>
+            <nav class="flex items-center gap-4 text-sm font-semibold">
+                <a href="index.html" class="text-stone-600 hover:text-amber-700">الرئيسية</a>
+                <a href="book.html" class="text-amber-700">احجز جلستك</a>
+                <a href="products.html" class="text-stone-600 hover:text-amber-700">المنتجات</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-2xl mx-auto px-4 py-8 w-full space-y-6">
+        <div class="text-center space-y-2">
+            <h1 class="text-2xl md:text-3xl font-black text-stone-900">حجز جلسة استشارية أو تدريب شخصي</h1>
+            <p class="text-stone-500 text-sm">اختر محور الجلسة المناسب لهدفك الصحي والبدني، واحجز موعدك مباشرة.</p>
+        </div>
+
+        <form id="bookingForm" class="bg-white p-6 md:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-6">
+            
+            <!-- الخطوة 1: اختيار المحور -->
+            <div class="space-y-3">
+                <label class="block font-bold text-stone-800 text-sm">1. اختر محور الجلسة الاستشارية:</label>
+                <div class="space-y-3">
+                    <label class="flex items-start gap-3 p-4 rounded-2xl border border-stone-200 cursor-pointer hover:border-amber-600 transition has-[:checked]:border-amber-600 has-[:checked]:bg-amber-50/50">
+                        <input type="radio" name="session_type" value="تقييم وتعديل النظام الغذائي - 600 ج.م" class="mt-1 accent-amber-600" checked>
+                        <div class="flex-grow flex justify-between items-center">
+                            <div>
+                                <div class="font-bold text-stone-800 text-sm">جلسة تقييم وتعديل النظام الغذائي</div>
+                                <div class="text-xs text-stone-500">مراجعة السعرات، تحليل العادات، وتصميم خطة مرنة. (60 دقيقة)</div>
+                            </div>
+                            <span class="font-black text-amber-700 text-sm">600 ج.م</span>
+                        </div>
+                    </label>
+
+                    <label class="flex items-start gap-3 p-4 rounded-2xl border border-stone-200 cursor-pointer hover:border-amber-600 transition has-[:checked]:border-amber-600 has-[:checked]:bg-amber-50/50">
+                        <input type="radio" name="session_type" value="متابعة شاملة (تغذية + تدريب شخصي) - 1000 ج.م" class="mt-1 accent-amber-600">
+                        <div class="flex-grow flex justify-between items-center">
+                            <div>
+                                <div class="font-bold text-stone-800 text-sm">متابعة شاملة (تغذية + تدريب شخصي)</div>
+                                <div class="text-xs text-stone-500">برنامج متكامل لتغيير شكل الجسم وبناء الكتلة العضلية. (90 دقيقة)</div>
+                            </div>
+                            <span class="font-black text-amber-700 text-sm">1000 ج.م</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- بيانات الحجز -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-stone-700">الاسم بالكامل</label>
+                    <input type="text" id="clientName" required placeholder="اكتب اسمك هنا" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-stone-700">رقم الهاتف (واتساب)</label>
+                    <input type="tel" id="clientPhone" required placeholder="01xxxxxxxx" class="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-600">
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-stone-900 hover:bg-amber-600 text-white font-bold py-4 rounded-2xl shadow-lg transition text-sm">
+                تأكيد الحجز الانتقال للواتساب
+            </button>
+        </form>
+    </main>
+
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+        <p>جميع الحقوق محفوظة © 2026 - منصة د. نور محمد</p>
+    </footer>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const session = document.querySelector('input[name="session_type"]:checked').value;
+            const name = document.getElementById('clientName').value;
+            const phone = document.getElementById('clientPhone').value;
+
+            const message = `مرحباً د. نور، أود حجز جلسة استشارية:\n- الاسم: ${name}\n- الهاتف: ${phone}\n- الاختيار: ${session}`;
+            const whatsappUrl = `https://wa.me/201000000000?text=${encodeURIComponent(message)}`;
+            window.location.href = whatsappUrl;
+        });
+    </script>
+</body>
+</html>
