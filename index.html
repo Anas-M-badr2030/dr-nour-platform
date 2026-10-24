@@ -14,11 +14,12 @@
 </head>
 <body class="bg-[#fcfbf9] min-h-screen flex flex-col">
 
-    <!-- شريط التنقل العلوي -->
-    <header class="bg-white/80 backdrop-md sticky top-0 z-50 border-b border-stone-200">
+    <!-- شريط التنقل العلوي مع الشعار -->
+    <header class="bg-white/90 backdrop-md sticky top-0 z-50 border-b border-stone-200">
         <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2">
-                <span class="font-black text-lg text-stone-800 tracking-tight">Dr. Nour Mohamed</span>
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/logo.png" alt="شعار د. نور محمد" class="w-10 h-10 rounded-full object-cover border border-amber-500/30 shadow-sm">
+                <span class="font-black text-sm md:text-base text-stone-800 tracking-tight">Dr. Nour Mohammed</span>
             </a>
             <nav class="flex items-center gap-4 text-sm font-semibold">
                 <a href="index.html" class="text-amber-700">الرئيسية</a>
@@ -32,12 +33,12 @@
     <!-- المحتوى الرئيسي -->
     <main class="flex-grow max-w-4xl mx-auto px-4 py-8 w-full space-y-8">
         
-        <!-- بطاقة البروفيسور / التعريفية -->
+        <!-- بطاقة البروفيسور / التعريفية مع صورة الدكتورة الشخصية -->
         <section class="bg-gradient-to-br from-stone-900 to-stone-800 text-white rounded-3xl p-6 md:p-10 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
             <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
             
             <div class="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-amber-500/30 shadow-2xl shrink-0">
-                <img src="1000153712.png" alt="د. نور محمد" class="w-full h-full object-cover">
+                <img src="assets/images/doctor-profile.png" alt="د. نور محمد" class="w-full h-full object-cover">
             </div>
 
             <div class="text-center md:text-right space-y-3">
@@ -109,11 +110,10 @@
     </main>
 
     <!-- الفوتر -->
-    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500 space-y-1">
         <p>جميع الحقوق محفوظة © 2026 - منصة د. نور محمد للتغذية والتدريب الشخصي</p>
-              <p>Design By Aipudio-Web</p>
+        <p class="text-stone-400 font-medium">Design By Aipudio-Web</p>
     </footer>
 
 </body>
-                  </html>
-                  
+</html>
