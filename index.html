@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة د. نور محمد | أخصائية تغذية ومدربة شخصية</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #fcfbf9; color: #2d2d2d; }
+    </style>
+</head>
+<body class="bg-[#fcfbf9] min-h-screen flex flex-col">
+
+    <!-- شريط التنقل العلوي -->
+    <header class="bg-white/80 backdrop-md sticky top-0 z-50 border-b border-stone-200">
+        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="font-black text-lg text-stone-800 tracking-tight">Dr. Nour Mohamed</span>
+            </a>
+            <nav class="flex items-center gap-4 text-sm font-semibold">
+                <a href="index.html" class="text-amber-700">الرئيسية</a>
+                <a href="book.html" class="text-stone-600 hover:text-amber-700">احجز جلستك</a>
+                <a href="products.html" class="text-stone-600 hover:text-amber-700">المنتجات</a>
+                <a href="admin.html" class="text-stone-400 hover:text-stone-600"><i class="fa-solid fa-lock text-xs"></i> الإدارة</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-8 w-full space-y-8">
+        
+        <!-- بطاقة البروفيسور / التعريفية -->
+        <section class="bg-gradient-to-br from-stone-900 to-stone-800 text-white rounded-3xl p-6 md:p-10 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
+            <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-amber-500/30 shadow-2xl shrink-0">
+                <img src="1000153712.png" alt="د. نور محمد" class="w-full h-full object-cover">
+            </div>
+
+            <div class="text-center md:text-right space-y-3">
+                <div class="inline-block bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/30">
+                    Nutritionist & Personal Trainer
+                </div>
+                <h1 class="text-3xl font-black tracking-tight">د. نور محمد</h1>
+                <p class="text-stone-300 text-sm leading-relaxed max-w-md">
+                    حياة أفضل، عقل سليم، وجسد متناسق. كل يوم نصيحة جديدة لتبدأ رحلتك الخاصة نحو صحة مستدامة 💪✨
+                </p>
+                <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="book.html" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-3 rounded-2xl shadow-lg shadow-amber-600/30 transition text-sm">
+                        احجز جلستك الاستشارية الآن
+                    </a>
+                    <a href="https://instagram.com/dr_nour_mo7med" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-2xl border border-white/20 transition text-sm flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-amber-400"></i> تواصل عبر إنستجرام
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- إحصائيات المنصة -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-2xl font-black text-amber-700">120ألف+</div>
+                <div class="text-xs text-stone-500 mt-1 font-semibold">متابع على المنصات</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-2xl font-black text-stone-800">برامج مخصصة</div>
+                <div class="text-xs text-stone-500 mt-1 font-semibold">تغذية وتدريب</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-2xl font-black text-amber-700">متابعة دقيقة</div>
+                <div class="text-xs text-stone-500 mt-1 font-semibold">تغيرات جذرية وآمنة</div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="text-2xl font-black text-stone-800">دعم مباشر</div>
+                <div class="text-xs text-stone-500 mt-1 font-semibold">طوال فترة الاشتراك</div>
+            </div>
+        </section>
+
+        <!-- الأقسام السريعة -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="book.html" class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-amber-500 transition group">
+                <div class="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-800 mb-1">حجز استشارة أو تدريب</h3>
+                <p class="text-stone-500 text-xs leading-relaxed">حدد هدفك (خسارة وزن، بناء عضلي، صحة عامة) وابدأ خطتك الشخصية.</p>
+            </a>
+            
+            <a href="products.html" class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-amber-500 transition group">
+                <div class="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-800 mb-1">المنتجات والخطط الرقمية</h3>
+                <p class="text-stone-500 text-xs leading-relaxed">دليلك الشامل للدايت الصحي، الجداول التدريبية، ووصفات صحية مبتكرة.</p>
+            </a>
+
+            <a href="membership.html" class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-amber-500 transition group">
+                <div class="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <h3 class="font-bold text-lg text-stone-800 mb-1">خطط العضويات الخاصة</h3>
+                <p class="text-stone-500 text-xs leading-relaxed">انضم إلى مجتمع د. نور لمتابعة أسبوعية، تقييم دوري، وتحفيز مستمر.</p>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="bg-white border-t border-stone-200 py-6 text-center text-xs text-stone-500">
+        <p>جميع الحقوق محفوظة © 2026 - منصة د. نور محمد للتغذية والتدريب الشخصي</p>
+              <p>Design By Aipudio-Web</p>
+    </footer>
+
+</body>
+                  </html>
+                  
